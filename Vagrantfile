@@ -42,4 +42,5 @@ Vagrant.configure(2) do |config|
   end
   config.vm.provision "shell", privileged: true, path: "./setup.sh"
   config.vm.provision "shell", privileged: true, path: "./docker-install.sh"
+  config.vm.provision "shell", privileged: true, path: "./docker-perpare.sh"
 end
